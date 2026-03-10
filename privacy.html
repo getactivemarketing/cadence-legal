@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Cadence</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #121314; color: #e5e5e7; line-height: 1.7; padding: 24px; max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: #fff; }
+    h2 { font-size: 20px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; color: #fff; }
+    h3 { font-size: 16px; font-weight: 600; margin-top: 20px; margin-bottom: 8px; color: #e5e5e7; }
+    p, li { font-size: 15px; margin-bottom: 12px; color: #a1a1a6; }
+    ul { padding-left: 24px; margin-bottom: 16px; }
+    li { margin-bottom: 6px; }
+    .subtitle { font-size: 14px; color: #6e6e73; margin-bottom: 32px; }
+    strong { color: #e5e5e7; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #2c2c2e; font-size: 14px; }
+    th { color: #e5e5e7; font-weight: 600; }
+    td { color: #a1a1a6; }
+    a { color: #5A8DEE; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Cadence — Adaptive Fitness Coach &middot; Last Updated: March 5, 2026</p>
+
+  <h2>Overview</h2>
+  <p>Cadence ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Cadence mobile application.</p>
+
+  <h2>Information We Collect</h2>
+
+  <h3>Information You Provide</h3>
+  <ul>
+    <li><strong>Account Information:</strong> Name and email address used for authentication via Apple Sign-In</li>
+    <li><strong>Goal and Preferences:</strong> Your fitness goal, experience level, equipment availability, and onboarding responses</li>
+    <li><strong>Check-in Data:</strong> Daily self-reported energy, soreness, mood, stress, schedule, and social plans</li>
+    <li><strong>Conversations:</strong> Text you enter into the coaching interface and the responses generated</li>
+    <li><strong>Reflections:</strong> End-of-day reflection status and optional notes</li>
+  </ul>
+
+  <h3>Information from Apple Health</h3>
+  <p>With your explicit permission, we read the following data from Apple HealthKit:</p>
+  <ul>
+    <li>Sleep duration and quality</li>
+    <li>Step count</li>
+    <li>Active energy burned (calories)</li>
+    <li>Resting heart rate</li>
+    <li>Heart rate variability (HRV)</li>
+    <li>Workout type, duration, and calories</li>
+  </ul>
+  <p><strong>We do not write any data to Apple Health.</strong> HealthKit data is used solely to provide personalized coaching recommendations within the app.</p>
+
+  <h3>Automatically Collected Information</h3>
+  <ul>
+    <li>Anonymous usage analytics (feature usage, session duration)</li>
+    <li>App performance data (crash reports, latency metrics)</li>
+    <li>Device type and OS version (for compatibility)</li>
+  </ul>
+
+  <h2>How We Use Your Information</h2>
+  <p>All data is used exclusively to:</p>
+  <ul>
+    <li>Generate personalized daily plans and readiness scores</li>
+    <li>Provide contextual coaching responses</li>
+    <li>Detect behavioral patterns (e.g., training consistency, recovery needs)</li>
+    <li>Send relevant notifications (with your permission)</li>
+    <li>Improve app functionality and user experience</li>
+  </ul>
+
+  <h2>Data Storage and Security</h2>
+  <ul>
+    <li>All data is stored on Supabase (hosted on AWS) with encryption at rest and in transit</li>
+    <li>Row Level Security (RLS) ensures you can only access your own data</li>
+    <li>Authentication is handled via Supabase Auth with Apple Sign-In</li>
+    <li>AI processing uses Anthropic's Claude API — your conversation text is sent for response generation but is not used by Anthropic to train their models</li>
+  </ul>
+
+  <h2>Data Sharing</h2>
+  <p><strong>We do not sell, rent, or share your personal data with third parties.</strong></p>
+  <p>Your data is shared only with:</p>
+  <ul>
+    <li><strong>Supabase</strong> (database hosting and authentication)</li>
+    <li><strong>Anthropic</strong> (AI response generation via API — conversation text only)</li>
+    <li><strong>Apple</strong> (push notification delivery via Apple Push Notification service)</li>
+  </ul>
+  <p>No data is shared with advertisers, data brokers, or analytics companies.</p>
+
+  <h2>Data Retention</h2>
+  <table>
+    <tr><th>Data Type</th><th>Retention Period</th></tr>
+    <tr><td>Account and profile</td><td>Until account deletion</td></tr>
+    <tr><td>Daily contexts and plans</td><td>Indefinite (needed for pattern detection)</td></tr>
+    <tr><td>Conversations</td><td>90 days</td></tr>
+    <tr><td>Health data</td><td>1 year</td></tr>
+    <tr><td>Analytics events</td><td>90 days</td></tr>
+    <tr><td>Notification logs</td><td>30 days</td></tr>
+  </table>
+
+  <h2>Your Rights</h2>
+  <p>You can at any time:</p>
+  <ul>
+    <li><strong>Export your data</strong> — Settings &gt; Data &gt; Export My Data (JSON format)</li>
+    <li><strong>Delete your account</strong> — Settings &gt; Data &gt; Delete My Account (permanently removes all data)</li>
+    <li><strong>Revoke HealthKit access</strong> — iOS Settings &gt; Privacy &gt; Health &gt; Cadence</li>
+    <li><strong>Disable notifications</strong> — Settings &gt; Notifications or iOS Settings</li>
+  </ul>
+
+  <h2>HealthKit Compliance</h2>
+  <p>In accordance with Apple's HealthKit guidelines:</p>
+  <ul>
+    <li>HealthKit data is never used for advertising or marketing</li>
+    <li>HealthKit data is never sold to third parties</li>
+    <li>HealthKit data is never shared with third parties for purposes unrelated to health improvement</li>
+    <li>HealthKit data is stored securely with user-level access controls</li>
+  </ul>
+
+  <h2>Children's Privacy</h2>
+  <p>Cadence is not intended for children under 17. We do not knowingly collect personal information from children.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify you of material changes through the app or via email. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions about this Privacy Policy, contact us at:<br><a href="mailto:privacy@cadencecoach.app">privacy@cadencecoach.app</a></p>
+</body>
+</html>
